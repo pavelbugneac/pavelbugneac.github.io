@@ -1,1 +1,0 @@
-# pavelbugneac.github.io
