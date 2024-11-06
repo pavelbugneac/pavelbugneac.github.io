@@ -6,6 +6,345 @@
 // Import Lato Google Font
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
+:root{
+    --bs-secondary-rgb: 247,247,247;
+    --gray: 247,247,247;
+    --white: 255,255,255;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*var(--bs-gutter-y));
+    margin-right: calc(-.5*var(--bs-gutter-x));
+    margin-left: calc(-.5*var(--bs-gutter-x))
+}
+
+.px-0 {
+    padding-right: 0!important;
+    padding-left: 0!important
+}
+
+.px-1 {
+    padding-right: .25rem!important;
+    padding-left: .25rem!important
+}
+
+.px-2 {
+    padding-right: .5rem!important;
+    padding-left: .5rem!important
+}
+
+.px-3 {
+    padding-right: 1rem!important;
+    padding-left: 1rem!important
+}
+
+.px-4 {
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important
+}
+
+.px-5 {
+    padding-right: 3rem!important;
+    padding-left: 3rem!important
+}
+
+.py-0 {
+    padding-top: 0!important;
+    padding-bottom: 0!important
+}
+
+.py-1 {
+    padding-top: .25rem!important;
+    padding-bottom: .25rem!important
+}
+
+.py-2 {
+    padding-top: .5rem!important;
+    padding-bottom: .5rem!important
+}
+
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important
+}
+
+.py-4 {
+    padding-top: 1.5rem!important;
+    padding-bottom: 1.5rem!important
+}
+
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important
+}
+
+.bg-secondary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-secondary-rgb),var(--bs-bg-opacity))!important
+}
+
+.section-gray {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-secondary-rgb),var(--bs-bg-opacity))!important
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)*.5);
+    padding-left: calc(var(--bs-gutter-x)*.5);
+    margin-top: var(--bs-gutter-y)
+}
+
+.img-fluid,.img-thumbnail {
+    max-width: 100%;
+    height: auto
+}
+
+.my-3 {
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important
+}
+
+.card-image {
+    transition: all .3s;
+    border-radius: 15px;
+    box-shadow: 1rem 1rem #365b6d
+}
+
+.card-image:hover {
+    transform: translate(-.5rem,-.5rem);
+    box-shadow: 2rem 2rem #365b6d
+}
+
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb),var(--bs-text-opacity))!important
+}
+
+.fw-bold {
+    font-weight: 700!important
+}
+
+.display-3 {
+    font-size: calc(1.525rem + 3.3vw);
+    font-weight: 300;
+    line-height: 1.2
+}
+
+@media(min-width: 1200px) {
+    .display-3 {
+        font-size:4rem
+    }
+}
+
+@media(min-width: 576px) {
+    .col-sm {
+        flex:1 0
+    }
+
+    .row-cols-sm-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-sm-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-sm-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-sm-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .row-cols-sm-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-sm-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-sm-6>* {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+    }
+
+    .col-sm-auto {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .col-sm-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%
+    }
+
+    .col-sm-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%
+    }
+
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%
+    }
+
+    .col-sm-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .col-sm-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%
+    }
+
+    .col-sm-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%
+    }
+
+    .col-sm-9 {
+        flex: 0 0 auto;
+        width: 75%
+    }
+
+    .col-sm-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%
+    }
+
+    .col-sm-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%
+    }
+
+    .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .offset-sm-0 {
+        margin-left: 0
+    }
+
+    .offset-sm-1 {
+        margin-left: 8.33333333%
+    }
+
+    .offset-sm-2 {
+        margin-left: 16.66666667%
+    }
+
+    .offset-sm-3 {
+        margin-left: 25%
+    }
+
+    .offset-sm-4 {
+        margin-left: 33.33333333%
+    }
+
+    .offset-sm-5 {
+        margin-left: 41.66666667%
+    }
+
+    .offset-sm-6 {
+        margin-left: 50%
+    }
+
+    .offset-sm-7 {
+        margin-left: 58.33333333%
+    }
+
+    .offset-sm-8 {
+        margin-left: 66.66666667%
+    }
+
+    .offset-sm-9 {
+        margin-left: 75%
+    }
+
+    .offset-sm-10 {
+        margin-left: 83.33333333%
+    }
+
+    .offset-sm-11 {
+        margin-left: 91.66666667%
+    }
+
+    .g-sm-0,.gx-sm-0 {
+        --bs-gutter-x: 0
+    }
+
+    .g-sm-0,.gy-sm-0 {
+        --bs-gutter-y: 0
+    }
+
+    .g-sm-1,.gx-sm-1 {
+        --bs-gutter-x: 0.25rem
+    }
+
+    .g-sm-1,.gy-sm-1 {
+        --bs-gutter-y: 0.25rem
+    }
+
+    .g-sm-2,.gx-sm-2 {
+        --bs-gutter-x: 0.5rem
+    }
+
+    .g-sm-2,.gy-sm-2 {
+        --bs-gutter-y: 0.5rem
+    }
+
+    .g-sm-3,.gx-sm-3 {
+        --bs-gutter-x: 1rem
+    }
+
+    .g-sm-3,.gy-sm-3 {
+        --bs-gutter-y: 1rem
+    }
+
+    .g-sm-4,.gx-sm-4 {
+        --bs-gutter-x: 1.5rem
+    }
+
+    .g-sm-4,.gy-sm-4 {
+        --bs-gutter-y: 1.5rem
+    }
+
+    .g-sm-5,.gx-sm-5 {
+        --bs-gutter-x: 3rem
+    }
+
+    .g-sm-5,.gy-sm-5 {
+        --bs-gutter-y: 3rem
+    }
+}
+
 // Update Bulma's global variables
 $family-sans-serif: "Lato", sans-serif;
 $widescreen-enabled: false;
